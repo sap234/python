@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+empdata={"empid":[1001,1002,1003,1004,1005],"ename":["ganesh rao","raghuram chauhan","nil das","abdas","sunaina chowdhury"],"sal":[12000,13000,45000,56000,54000],"doj":["10.10.2000","23.12.2005","30.01.2009","13.04.2003","5.08.2010"]}
+df=pd.DataFrame(empdata)
+
+x=df["empid"]
+y=df["sal"]
+
+plt.bar(x,y,label="EMPLOYEE DATA",color="red")
+plt.xlabel("Employee ids")
+plt.ylabel("salary")
+
+plt.title("SOFTECH INC")
+plt.legend()
+plt.show()
