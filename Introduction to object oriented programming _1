@@ -1,0 +1,16 @@
+class bank:
+    
+    def __init__(self):
+        self.accno=111236009872
+        self.name="srinu Viswakarma"
+        self.balance=40000.00
+        self. __loan=12945000.00
+    def display_to_clerk(self):
+    
+    
+        print(self.accno)
+        print(self.name)
+        print(self.balance)
+b1=bank()
+b1.display_to_clerk()
+
