@@ -1,0 +1,24 @@
+#current date and time#
+from datetime import *
+now= datetime.now()
+print(now)
+print('Date now: {}/{}/{}'.format(now.day,now.month,now.year))
+print('Time now: {}:{}:{}'.format(now.hour,now.minute,now.second))
+
+#current year#
+td=date.today()
+print('current year:',td.year)
+print('current month:',td.month)
+
+#week no of year and week day#
+
+s1=td.strftime('%U')
+print('week no of the year :',s1)
+s2=td.strftime('%A')
+print('week day:',s2)
+
+#day of the year and day of week
+s3=td.strftime('%j')
+print('Today is',s3,'th day of the current year')
+s4=td.strftime('%A')
+print('Today is',s4)
